@@ -1,0 +1,33 @@
+package com.flyaway;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.Main.Paymentdetails;
+
+/**
+ * Servlet implementation class Payment
+ */
+public class Payment extends HttpServlet {
+	 public static String flight_booking_id;
+	    public static int ticket_price;
+	    public static String flight_name;
+	private static final long serialVersionUID = 1L;
+       
+   
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+//		
+//		doGet(request, response);
+//		String id= request.getParameter("Id");
+//		String name = request.getParameter("Flight");
+//		String price = request.getParameter("Ticket_Price");
+//		 if (Paymentdetails.name_on_card.equals("") || Paymentdetails..equals("")) {
+//		        out.println("Please enter valid card details");
+//		    }
+//			}
+	}
+}

@@ -1,0 +1,143 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ page import="com.Main.Search" %>
+     
+      <%@ page import="com.Main.UserDetails" %>
+  <%@page import="java.sql.*"%>
+    
+   <%
+    String driverName = "com.mysql.jdbc.Driver";
+    String Url = "jdbc:mysql://localhost:3306/flyaway";
+ 
+    String userId = "root";
+    String password = "say123";
+    String query = Search.getQuery();
+    try {
+        Class.forName(driverName);
+    } catch (ClassNotFoundException e) {
+        e.printStackTrace();
+    }
+    Connection connection = null;
+    Statement statement = null;
+    ResultSet resultSet = null;
+%>
+    
+
+  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome to FlyAway</title>
+
+
+<%@include file="allcss.jsp" %>
+	<link rel="stylesheet" href="CSS/style2.css" />
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-custom" id="navbar">
+
+
+
+
+
+		<a class="navbar-brand" id="tag"><i class="fa fa-plane"
+			aria-hidden="true"></i>FlyAway Ticket Booking</a>
+
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a class="nav-link" href="Home.jsp"> <i
+						class="fa fa-home" aria-hidden="true"></i>Home
+				</a></li>
+
+				
+				<li class="nav-item"><a href="Login.jsp" class="nav-link"><i
+						class="fa fa-gear"></i> Admin Login</a></li>
+						
+						
+						
+
+
+
+			</ul>
+
+
+
+		</div>
+
+	</nav>	
+						<div class="contain">
+		<div class="raw ">
+			<div class="col-md-4-ofset-md-4">
+				<div class="card">
+					<div class="card-header text-center c-head" id="head">
+						<i class="fa fa-money" aria-hidden="true"></i>
+						<h3>Payment</h3>
+					</div>
+					<div class="card-body">
+						<form action="Payment" method="post">
+						
+							<div class="form-group">
+								<label for="Accountno">Enter Account No</label> <input
+									type="number"  name="Accountno" class="form-control" id="Accountno"  
+									aria-describedby="usernamelHelp">
+									
+							</div>
+							<div class="form-group">
+								<label for="Accountholder">Enter Account Holder Name</label> <input
+								
+									type="text" name="Accountholder" class="form-control" id="Accountholder">
+									
+									 
+							</div>
+							<div class="form-group">
+								<label for="cardno">Enter Card No</label> <input
+								
+									type="number" name="cardno" class="form-control" id="cardno">
+									
+									 
+							</div>
+							<div class="form-group">
+								<label for="cvr">Enter CVR No</label> <input
+								
+									type="number" name="cvr" class="form-control" id="cvr">
+									
+			<% try{
+                connection = DriverManager.getConnection(Url, userId, password);
+                statement=connection.createStatement();
+                resultSet = statement.executeQuery(query);
+                while(resultSet.next()){	
+                
+                
+                
+                %>	
+					<h4><%=resultSet.getString("ticket_price") %></h4>				 </div><br>
+									<p align="left"><span><strong>Total fare = <br> <%=resultset.getString("ticket_price")%> X <%=Search.persons%> persons = Rs.<%=UserDetails.ticket_price*Search.persons%></strong></span></p>
+							
+							<button type="submit" class="btn btn-primary btn-block badge--pill">Confirm Payment</button>
+						</form>
+						<%
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        %>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+		</div>
+
+
+	</div>
+
+
+
+</body>
+</html>

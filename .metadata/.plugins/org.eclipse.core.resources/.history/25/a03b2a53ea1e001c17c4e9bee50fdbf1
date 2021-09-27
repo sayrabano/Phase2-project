@@ -1,0 +1,58 @@
+package com.Main;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="User_data")
+public class User_Register {
+	@Override
+	public String toString() {
+		return "User_Register [first_name=" + first_name + ", last_name=" + last_name + ", email=" + email
+				+ ", mobile_no=" + mobile_no + ", address=" + address + "]";
+	}
+	@Column(name="First_Name")
+	private String first_name;
+	@Column(name="Last_Name")
+	private String last_name;
+	@Id
+	@Column(name="Email")
+	private String email;
+	@Column(name="Mobile_No")
+	private String mobile_no;
+	@Column(name="Address")
+	private String address;
+	public String getFirst_name() {
+		return first_name;
+	}
+	public void setFirst_name(String first_name) {
+		this.first_name = first_name;
+	}
+	public String getLast_name() {
+		return last_name;
+	}
+	public void setLast_name(String last_name) {
+		this.last_name = last_name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getMobile_no() {
+		return mobile_no;
+	}
+	public void setMobile_no(String mobile_no) {
+		this.mobile_no = mobile_no;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+}

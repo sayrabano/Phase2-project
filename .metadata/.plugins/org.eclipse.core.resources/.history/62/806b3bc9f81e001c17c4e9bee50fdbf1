@@ -1,0 +1,14 @@
+package com.Main;
+
+public abstract class UserData {
+	 public static String first_name;
+	  public static String last_name;
+	  public static String email;
+	  public static String mobile_no;
+	  public static String address;
+	  public static String getQuery() {
+	        return "SELECT * FROM user_data WHERE  First_Name = '"+first_name+"' AND Last_Name ='"+last_name+"' AND Email='"+email+"' AND MOBILE_NO='"+mobile+""'";
+	    }
+	
+
+}

@@ -1,0 +1,57 @@
+package com.flyaway;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.Main.User_Register;
+
+
+public class ServletRegister extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		doGet(request, response);
+		
+		PrintWriter out  = response.getWriter();
+		response.setContentType("text/jsp");
+		
+	
+			String first_name = request.getParameter("fname");
+			String last_name = request.getParameter("lname");
+			String email = request.getParameter("email");
+			String mobile_no = request.getParameter("mobile");
+			String address = request.getParameter("address");
+			
+			User_Register us = new User_Register();
+			us.setFirst_name(first_name);
+			us.setLast_name(last_name);
+			us.setEmail(email);
+			us.setMobile_no(mobile_no);
+			us.getAddress();
+			System.out.println(first_name+" "+ last_name+" "+mobile_no+" "+address);
+			
+			
+			
+		
+		
+		if(first_name.equals("")||last_name.equals("")||email.equals("")||mobile_no.equals("")||address.equals(""))
+		{
+			out.print("Please Enter valid  Passengers Details..");
+			}					else {
+             response.sendRedirect("payment.jsp");
+            
+	      
+		}
+		out.close();
+	}
+}

@@ -1,0 +1,94 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+   
+   
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>FlyAway</title>
+
+	<link rel="stylesheet" href="CSS/Style6.css" />
+	<style>
+	
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-custom" id="navbar">
+
+
+
+
+
+		<a class="navbar-brand" id="tag"><i class="fa fa-plane" aria-hidden="true"></i>FlyAway Ticket Booking</a>
+
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				
+				<li class="nav-item"><a class="nav-link" href="Home.jsp">
+						<i class="fa fa-home" aria-hidden="true"></i>Home </a></li>
+						
+				<li class="nav-item"><a href="Login.jsp" class="nav-link"><i
+						class="fa fa-gear"></i> Admin Login</a></li>
+
+
+
+
+			</ul>
+		
+
+
+		</div>
+
+	</nav>
+<div>
+
+
+</div>
+<div class="wrapper">
+  <div class="title">
+    Register Here
+  </div>
+  
+  
+<form action="ServletRegister" method="post">
+  
+  <div class="form">
+    <div class="input_field">
+      <input type="text" name="fname" placeholder="Enter First Name" class="input">
+      <i class="fa fa-user" aria-hidden="true"></i>
+     
+    </div>
+    <div class="input_field">
+    
+      <input type="text" name="lname" placeholder="Enter Last Name" class="input">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      
+    </div>
+    <div class="input_field">
+      <input type="email" name="email" placeholder="Email" class="input">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      
+    </div>
+    <div class="input_field">
+     
+      <input type="text" name ="mobile" placeholder="Enter Mobile No" class="input">
+      <i class="fa fa-mobile" aria-hidden="true"></i>
+    </div>
+        <div class="input_field">
+      <input type="text" name="address" placeholder="Address" class="input">
+     <i class="fa fa-address-card" aria-hidden="true"></i>
+    </div><br>
+  <button type="submit" class="btn btn-primary btn-block badge--pill">Sign In</button>
+  
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>

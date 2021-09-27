@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+
+
+body{
+	background:url("../Images/joshua-pilla-ZloCK_gHB9o-unsplash.jpg");
+	background-size:cover;
+	padding:0px;
+	margin:0px;
+}
+
+
+#navbar{
+background-color:rgba(0,0,0,.2) ;
+font-family:'Ubuntu', sans-serif;
+
+}
+
+
+#navbar ul li a{
+	color:white;
+	
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 20px;
+	
+}
+#navbar ul li a:hover{
+	color:black;
+	background-color:white;
+	border-radius:18px;
+	
+	
+}
+
+
+#tag{
+	font-size:30px;
+	
+	
+	float:right;
+	padding: 10px 20px;
+	
+}
+#gear{
+	margin:2px;
+	padding:10px;
+	
+	
+	
+}
+	
+h2,p{
+	font-family:'Ubuntu', sans-serif;
+} 
+#tb{
+	font-family: 'Baloo Bhai 2', cursive;
+	background-color:#b0bec5;
+	
+}
+

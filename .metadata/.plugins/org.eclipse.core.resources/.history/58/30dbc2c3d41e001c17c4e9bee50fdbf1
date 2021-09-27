@@ -1,0 +1,12 @@
+package com.flyaway;
+
+import com.Main.User_Register;
+
+public class Userhelper {
+
+	public void userregister(User_Register us) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

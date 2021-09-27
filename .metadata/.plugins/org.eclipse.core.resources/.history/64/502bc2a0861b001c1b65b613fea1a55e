@@ -1,0 +1,137 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+
+	<servlet>
+		<servlet-name>SearchFlight</servlet-name>
+		<display-name>SearchFlight</display-name>
+		<description></description>
+		<servlet-class>com.Main.SearchFlight</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ChangePassword</servlet-name>
+		<display-name>ChangePassword</display-name>
+		<description></description>
+		<servlet-class>com.FlyAway.ChangePassword</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Searchflight</servlet-name>
+		<display-name>Searchflight</display-name>
+		<description></description>
+		<servlet-class>com.FlyAway.SearchFlight</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Flightsearch</servlet-name>
+		<display-name>Flightsearch</display-name>
+		<description></description>
+		<servlet-class>com.FlyAway.Flightsearch</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<display-name>Search</display-name>
+		<description></description>
+		<servlet-class>com.FlyAway.Search</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LogOut</servlet-name>
+		<display-name>LogOut</display-name>
+		<description></description>
+		<servlet-class>com.flyaway.LogOut</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>SearchServlet</servlet-name>
+		<display-name>SearchServlet</display-name>
+		<description></description>
+		<servlet-class>com.flyaway.SearchServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletRegister</servlet-name>
+		<display-name>ServletRegister</display-name>
+		<description></description>
+		<servlet-class>com.flyaway.ServletRegister</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogIn</servlet-name>
+		<display-name>LogIn</display-name>
+		<description></description>
+		<servlet-class>com.flyaway.LogIn</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Changepassword</servlet-name>
+		<display-name>Changepassword</display-name>
+		<description></description>
+		<servlet-class>com.flyaway.Changepassword</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Payment</servlet-name>
+		<display-name>Payment</display-name>
+		<description></description>
+		<servlet-class>com.flyaway.Payment</servlet-class>
+	</servlet>
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>SearchFlight</servlet-name>
+		<url-pattern>/SearchFlight</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ChangePassword</servlet-name>
+		<url-pattern>/changePassword</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Searchflight</servlet-name>
+		<url-pattern>/Searchflight</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Flightsearch</servlet-name>
+		<url-pattern>/Flightsearch</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LogOut</servlet-name>
+		<url-pattern>/LogOut</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/SearchServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletRegister</servlet-name>
+		<url-pattern>/ServletRegister</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogIn</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Changepassword</servlet-name>
+		<url-pattern>/Changepassword</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Payment</servlet-name>
+		<url-pattern>/Payment</url-pattern>
+	</servlet-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>Home.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

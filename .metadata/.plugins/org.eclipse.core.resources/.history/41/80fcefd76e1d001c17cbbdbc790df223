@@ -1,0 +1,130 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+	<%@page import="com.flyaway.LogIn"%>
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#head{
+	background-color:green;
+}
+</style>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-custom" id="navbar">
+
+
+
+
+
+		<a class="navbar-brand" id="tag">FlyAway Ticket Booking</a>
+
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+
+				<li class="nav-item"><a class="nav-link" href="Home.jsp">
+						Home </a></li>
+				<li class="nav-item"><a href="Login.jsp" class="nav-link"><i
+						class="fa fa-gear"></i> Admin Login</a></li>
+
+
+
+
+			</ul>
+			<div id="gear">
+				<a href="Login.jsp" class="link"><i class="fa fa-gear"></i>
+					Admin Login</a>
+			</div>
+
+
+
+		</div>
+
+	</nav>
+
+
+
+	<div class="contain">
+		<div class="raw -">
+			<div class="col-md-4-oofset-md-4">
+				<div class="card">
+					<div class="card-header text-center c-head" id="head">
+						
+						<h2>CHANGE PASSWORD</h2>
+						<%if (LogIn.isLoggedin){ %>
+						<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+					</div>
+					<div class="card-body">
+						<form action="Changepassword" method="post">
+						<div class="form-group">
+								<label for="oldpass">Enter Old Password</label> <input
+								
+									type="text"  name="oldpass" class="form-control" id="oldpass"
+									aria-describedby="passwordHelp"> 
+									
+									
+							</div>
+						
+							<div class="form-group">
+								<label for="newpass">Enter New Password</label> <input
+									type="text"  name="npass" class="form-control" id="newpass"
+									aria-describedby="passwordHelp"> 
+									
+							</div>
+							<div class="form-group">
+								<label for="rpass">Re-type New Password</label> <input
+									type="text"  name="pass" class="form-control" id="newpass"
+									aria-describedby="passwordHelp"> 
+									
+							</div>
+							
+							<button type="submit" class="btn btn-primary btn-block badge--pill">Change Password</button>
+						</form>
+						
+					</div>
+				</div>
+
+<%
+						}
+						else{
+							out.println("You have to login First!");
+						}
+						%>
+
+			</div>
+
+
+
+		</div>
+
+
+	</div>
+
+
+
+
+
+</body>
+
+</html>

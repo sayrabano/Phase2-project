@@ -1,0 +1,46 @@
+package com.Main;
+
+
+public class User_Register {
+	@Override
+	public String toString() {
+		return "User_Register [first_name=" + first_name + ", last_name=" + last_name + ", email=" + email
+				+ ", mobile_no=" + mobile_no + ", address=" + address + "]";
+	}
+	public static String first_name;
+	public static String last_name;
+	public static String email;
+	public static String mobile_no;
+	public static address;
+	public String getFirst_name() {
+		return first_name;
+	}
+	public void setFirst_name(String first_name) {
+		this.first_name = first_name;
+	}
+	public String getLast_name() {
+		return last_name;
+	}
+	public void setLast_name(String last_name) {
+		this.last_name = last_name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getMobile_no() {
+		return mobile_no;
+	}
+	public void setMobile_no(String mobile_no) {
+		this.mobile_no = mobile_no;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+}

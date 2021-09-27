@@ -1,0 +1,74 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+
+#navbar{
+background-color:rgba(0,0,0,.1) ;
+font-family:'Ubuntu', sans-serif;
+
+}
+
+
+#navbar ul li a{
+	color:white;
+	
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 20px;
+	
+}
+#navbar ul li a:hover{
+	color:black;
+	background-color:white;
+	border-radius:18px;
+	
+	
+}
+
+
+#tag{
+	font-size:25px;
+ color:black;
+ font-weight:bold;
+
+	
+	float:right;
+	padding: 10px 20px;
+	
+}
+#gear{
+	margin:2px;
+	padding:10px;
+	
+	
+	
+}
+#gear a:hover{
+	
+	
+	
+	background-color:white;
+	
+	
+}
+h2{
+	text-align:center;
+	font-family:'Ubuntu', sans-serif;
+}
+.btn{
+	
+   background-color:#b0bec5;
+	font-family:'Ubuntu', sans-serif;
+	float:right;
+    display:flex;
+	
+	
+}
+.thead{
+	background-color:#000000;
+	font-family:'Ubuntu', sans-serif;
+	color:white;
+}
+.tbody{
+	background-color:#b0bec5;
+	font-family:'Ubuntu', sans-serif;
+}

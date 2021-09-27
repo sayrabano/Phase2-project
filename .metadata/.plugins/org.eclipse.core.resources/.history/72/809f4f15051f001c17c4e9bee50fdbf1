@@ -1,0 +1,83 @@
+@charset "ISO-8859-1";
+
+.cont{
+	background:white;
+	position:relative;
+	width:1200px;
+	height:500px;
+	border: 3px solid black;
+	
+}
+.div{
+	margin-top:5px;
+	
+	display:flex;
+	background:red;
+}
+.dest{
+	margin-top:5px;
+	margin-left:50rem;
+}
+.p{
+	margin-top:5rem;
+}
+
+#navbar{
+background-color:rgba(0,0,0,.2);
+font-family:'Ubuntu', sans-serif;
+
+}
+
+
+#navbar ul li a{
+	color:white;
+	
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 20px;
+	
+}
+#navbar ul li a:hover{
+	color:black;
+	background-color:white;
+	border-radius:18px;
+	
+	
+}
+
+
+#tag{
+	font-size:2rem;
+ color:black;
+ font-weight:bold;
+
+	
+	float:right;
+	padding: 10px 20px;
+	
+}
+#gear{
+	margin:2px;
+	padding:10px;
+	
+	
+	
+}
+#gear a:hover{
+	
+	
+	
+	background-color:white;
+	
+	
+}
+
+
+
+.span{
+	font-size:5rem;
+}
+
+
+	
+

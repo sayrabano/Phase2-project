@@ -1,0 +1,67 @@
+package com.flyaway;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+public class Changepassword extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		PrintWriter out = response.getWriter();
+		
+		String newpass= request.getParameter("user_password");
+		//String rpass= request.getParameter("user_password");
+		
+		
+		
+	         if (newpass.equals("")){
+	            out.println("Password can't be empty");
+	        }
+	        else if (LogIn.isLoggedin && !newpass.equals("")){
+	            LogIn.password = newpass;
+	         
+	          
+	           
+	            out.println("Password has been changed Successfully. New Password is "+LogIn.password);
+	        }
+	        else {
+	            out.println("Oops, Something went wrong ! Try again");
+	        }
+	        out.close();
+	    }
+		
+		
+		
+	
+		
+		
+		
+	
+
+		
+		
+	
+		
+	
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+		
+	}
+	
+        
+		
+	}
+	
+
+

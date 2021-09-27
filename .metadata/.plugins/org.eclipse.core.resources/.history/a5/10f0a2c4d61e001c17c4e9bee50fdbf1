@@ -1,0 +1,16 @@
+package com.flyaway;
+
+import com.Main.User_Register;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class Userhelper {
+	public static SessionFactory factory = HibernateUtil.sessionFactory;
+
+	public void userregister(User_Register us) {
+		Session session= factory.openSession();
+		
+		
+	}
+
+}

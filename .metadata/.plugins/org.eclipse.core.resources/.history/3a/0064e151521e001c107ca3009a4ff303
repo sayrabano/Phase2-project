@@ -1,0 +1,23 @@
+package com.Main;
+
+public class UserDetails {
+	// flight details
+	   
+    public static int ticket_price;
+    public static String Flight_name;
+    
+      //payments details
+   public static String Accountno;
+   public static String Accountholder;
+   public static String cardno;
+   public static String cvr ;
+   
+   
+   //User Details
+  public static String first_name;
+  public static String lname;
+  public static String email;
+  public static String mobile;
+  public static String address;
+
+}

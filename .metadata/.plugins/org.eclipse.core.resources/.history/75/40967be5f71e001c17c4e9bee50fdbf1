@@ -1,0 +1,10 @@
+package com.Main;
+
+public interface Userdata {
+	 public static String first_name;
+	  public static String last_name;
+	  public static String email;
+	  public static String mobile_no;
+	  public static String address;
+
+}
