@@ -136,3 +136,13 @@ Sep 27, 2021 03:08:25.74 [2592:10192:0927/030825.074:ERROR:print_preview_handler
 Sep 27, 2021 03:08:25.99 [2592:10192:0927/030825.099:ERROR:print_preview_handler.cc(557)] Initiated PrintPreviewHandler::HandleGetPrinters()
 Sep 27, 2021 03:08:25.113 [2592:10192:0927/030825.113:ERROR:print_preview_handler.cc(590)] Initiated PrintPreviewHandler::HandleGetPrinterCapabilities()
 Sep 27, 2021 03:08:25.232 [2592:10192:0927/030825.232:ERROR:print_preview_handler.cc(622)] Initiated PrintPreviewHandler::HandleGetPreview()
+
+Sep 28, 2021 10:35:15.341 NEW SESSION
+Sep 28, 2021 10:35:15.341 [7268:5888:0928/103515.339:ERROR:chrome_browser_main_extra_parts_metrics.cc(228)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+Sep 28, 2021 10:35:15.374 [7268:5888:0928/103515.339:ERROR:chrome_browser_main_extra_parts_metrics.cc(231)] crbug.com/1216328: Checking Bluetooth availability ended.
+Sep 28, 2021 10:35:15.375 [7268:5888:0928/103515.339:ERROR:chrome_browser_main_extra_parts_metrics.cc(234)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+Sep 28, 2021 10:35:15.375 [7268:5888:0928/103515.341:ERROR:chrome_browser_main_extra_parts_metrics.cc(238)] crbug.com/1216328: Checking default browser status ended.
+Sep 28, 2021 10:35:15.385 [7268:9032:0928/103515.345:ERROR:device_event_log_impl.cc(214)] [10:35:15.345] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Sep 28, 2021 10:35:15.459 [7268:2880:0928/103515.459:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+Sep 28, 2021 10:35:15.460 [7268:2880:0928/103515.459:ERROR:registration_request.cc(247)] Registration URL fetching failed.
+Sep 28, 2021 10:35:15.460 [7268:2880:0928/103515.460:ERROR:registration_request.cc(247)] Registration URL fetching failed.

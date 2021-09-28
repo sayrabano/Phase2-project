@@ -5,12 +5,15 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SearchDao {
-
+    
+	//Initializing Connection variables
 	private String dbUrl = "jdbc:mysql://localhost:3306/flyaway";
 	private String dbUname = "root";
 	private String dbPassword = "say123";
 	private String dbDriver = "com.mysql.cj.jdbc.Driver";
-
+	
+	
+   //  loading the Driver
 	public void loadDriver(String dbDriver) {
 		try {
 			Class.forName(dbDriver);
@@ -20,6 +23,7 @@ public class SearchDao {
 		}
 	}
 
+	//Creating Connection 
 	public Connection getConnection()
 	{
 		Connection con = null;
