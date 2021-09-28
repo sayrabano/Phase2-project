@@ -1,0 +1,76 @@
+@charset "ISO-8859-1";
+
+body{
+	background:url("../Images/");
+	background-size:cover;
+	padding:0px;
+	margin:0px;
+}
+
+
+
+#navbar{
+background-color:rgba(0,0,0,.2) ;
+font-family:'Ubuntu', sans-serif;
+
+}
+
+
+#navbar ul li a{
+	color:white;
+	
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 20px;
+	
+	
+}
+#navbar ul li a:hover{
+	color:black;
+	background-color:white;
+	border-radius:18px;
+	
+	
+}
+
+
+#tag{
+	font-size:2rem;
+ color:black;
+ font-weight:bold;
+
+	
+	float:right;
+	padding: 10px 20px;
+	
+}
+#gear{
+	margin:2px;
+	padding:10px;
+	
+	
+	
+}
+
+
+#form{
+	
+	padding:46x;
+	font-family: 'Baloo Bhai 2', cursive;
+	font-size:20px;
+	
+	
+}
+.form-control{
+	height:50px;
+	
+}
+#source{
+	height:50px;
+}
+#destination{
+	height:50px;
+}
+#persons{
+	height:50px;
+}

@@ -2,6 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@page import="java.sql.*"%>
 <%@ page import="com.Main.Search"%>
+<%@page import="java.util.Date" %>
 
 
 <!DOCTYPE html>
@@ -35,6 +36,7 @@
 			<span><strong>Your Ticket has been booked. The
 					Details of the Flight Follows</strong></span>
 		</p>
+		<p style="text-align:center;">Date of Ticket Booking : <%=new Date().toString() %></p>
 		<br>
 
 

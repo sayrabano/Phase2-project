@@ -74,9 +74,9 @@ ResultSet resultSet = null;
 %>
 	<div>
 		<h2>Welcome To Admin DashBoard</h2>
-		<p style="text-align:center;"> LoggedIn as :- Username is : <%=LogIn.username %> and
+		<p style="text-align:center; font-size:15px; font-family:'Ubuntu', sans-serif;"> LoggedIn as :- Username is : <%=LogIn.username %> and
 		Password is : <%=LogIn.password %> 
-</p>
+      </p>
 		 
 	<br><br>
 	
