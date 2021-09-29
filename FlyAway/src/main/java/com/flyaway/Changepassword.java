@@ -8,19 +8,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
+   //Servlet for ChangePassword Field.....
 public class Changepassword extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		 //creating object for printWriter method ...
 		
 		PrintWriter out = response.getWriter();
+		  //Getting parameter for password field
 		
 		String newpass= request.getParameter("user_password");
-		//String rpass= request.getParameter("user_password");
+	
 		
-		
+		  
+		//Declaring Condition to Validate NewPassword .....
 		
 	         if (newpass.equals("")){
 	            out.println("Password can't be empty");
@@ -35,25 +38,14 @@ public class Changepassword extends HttpServlet {
 	        else {
 	            out.println("Oops, Something went wrong ! Try again");
 	        }
+	         //Closing out method
 	        out.close();
 	    }
 		
 		
 		
 	
-		
-		
-		
-	
-
-		
-		
-	
-		
-	
-
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		

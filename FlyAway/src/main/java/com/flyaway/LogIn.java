@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
+ //AdminLogin Servlet....
 public class LogIn extends HttpServlet {
-	
+	//Initializing or Declaring Variables for Admin log in Page...
 	private static final long serialVersionUID = 1L;
 	public static  String username = "Admin";
 	public static  String password = "1234";
@@ -23,13 +23,19 @@ public class LogIn extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
+		 //creating object for printWriter method ...
+		
 		PrintWriter out = response.getWriter();
 		//out.println("hello welcome");
 		
 		
+		
+		 //Fetching parameters
 		String username = request.getParameter("user_name");
 		String password = request.getParameter("user_password");
 
+		
+		//Declaring Condition for Login Validation .....
 		if (username.equals(LogIn.username) && password.equals(LogIn.password)) {
 
 		   isLoggedin = true;
@@ -43,7 +49,9 @@ public class LogIn extends HttpServlet {
 		else {
 			isLoggedin = false;
 			out.println("You have Entered Wrong username or password ! Try  Again");
-		}out.close();
+		}
+		//Closing out method
+		out.close();
 
 	}
 

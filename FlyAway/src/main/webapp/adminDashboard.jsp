@@ -6,10 +6,8 @@
 <%
 String driverName = "com.mysql.cj.jdbc.Driver";
 String Url = "jdbc:mysql://localhost:3306/flyaway";
-
 String userId = "root";
 String password = "say123";
-
 try {
 	Class.forName(driverName);
 } catch (ClassNotFoundException e) {
@@ -70,7 +68,6 @@ ResultSet resultSet = null;
 	</nav>
 
 <%if(LogIn.isLoggedin) {
-
 %>
 	<div>
 		<h2>Welcome To Admin DashBoard</h2>
@@ -82,7 +79,7 @@ ResultSet resultSet = null;
 	
 	</div>
 	<div class="row" align="center">
-	<
+	
         <div class="col-lg-3 col-md-4col-sm-6 mb-4">
             <form action="LogOut" method="get">
            <button type="submit" class="btn btn-primary btn">Logout</button>
@@ -90,9 +87,9 @@ ResultSet resultSet = null;
         </div>
         
         </div>
-        </div>
+        
          <br><br><br><br>
-               <center><h2>List of Flight</h2></center><br>
+               <h2 style="text-align:center;">List of Flight</h2><br>
 	
 				<table class="table table-bodered table striped" align="center">
 					<thead class="thead">
@@ -132,7 +129,6 @@ ResultSet resultSet = null;
 						e.printStackTrace();
 						}
 }
-
 else{
 	out.print("<h3>You should login First!</h3>");
 }

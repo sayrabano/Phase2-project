@@ -1,12 +1,6 @@
 package com.Main;
 
-
-
-
-
-
-
-
+ //Simple pojo class for User/Paseenger...
 public class User_Register {
 	@Override
 	public String toString() {

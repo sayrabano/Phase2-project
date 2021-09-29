@@ -78,7 +78,7 @@
 					<%=Search.persons%>
 				</p>
 			</div>
-			<p><%=UserDetails.mobile_no%></p>
+			
 		</div>
 
 		<h2 align="right">

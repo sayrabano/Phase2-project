@@ -1,9 +1,0 @@
-package com.Main;
-
-public class Paymentdetails {
-	// flight details
-    public static String flight_booking_id;
-    public static int ticket_price;
-    public static String flight_name;
-
-}

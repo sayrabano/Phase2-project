@@ -1,6 +1,9 @@
 package com.Main;
 
 public class UserDetails {
+	
+	//Passenger Related all Details or Variables...
+	
 	// flight details
 	   
     public static int ticket_price;

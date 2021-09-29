@@ -11,9 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
-/**
- * Servlet implementation class ServletRegister
- */
+//Servlet foe PassengerRegistration ....
 public class ServletRegister extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -22,20 +20,20 @@ public class ServletRegister extends HttpServlet {
    
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 		
 	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
 		doGet(request, response);
+		//creating object for printWriter method ...
 		
 		PrintWriter out  = response.getWriter();
 		response.setContentType("text/jsp");
 		
-	
+	         //Getting Parameters...
 			String first_name = request.getParameter("fname");
 			String last_name = request.getParameter("lname");
 			String email = request.getParameter("email");
@@ -45,7 +43,7 @@ public class ServletRegister extends HttpServlet {
 			
 			
 		
-		
+		  //address Conditions...
 		if(first_name.equals("")||last_name.equals("")||email.equals("")||mobile_no.equals("")||address.equals(""))
 		{
 			out.print("Please Enter valid  Passengers Details..");
@@ -55,5 +53,7 @@ public class ServletRegister extends HttpServlet {
             
 	      
 		}
-	}
+	
+	} 
 }
+

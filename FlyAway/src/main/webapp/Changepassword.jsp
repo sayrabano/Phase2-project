@@ -9,74 +9,8 @@
 <meta charset="ISO-8859-1">
 <title>Fly Away</title>
 <%@include file="allcss.jsp" %>
-<style>
-#navbar{
-background-color:rgba(0,0,0,.2);
-font-family:'Ubuntu', sans-serif;
+<link rel="stylesheet" href="CSS/style9.css" />
 
-}
-
-
-#navbar ul li a{
-	color:white;
-	
-	font-size:20px;
-	font-weight:bold;
-	padding:15px 20px;
-	
-}
-#navbar ul li a:hover{
-	color:black;
-	background-color:white;
-	border-radius:18px;
-	
-	
-}
-
-
-#tag{
-	font-size:2rem;
- color:black;
- font-weight:bold;
-
-	
-	float:right;
-	padding: 10px 20px;
-	
-}
-#gear{
-	margin:2px;
-	padding:10px;
-	
-	
-	
-}
-#gear a:hover{
-	
-	
-	
-	background-color:white;
-}
-
-.span{
-	font-size:5rem;
-}
-
-.card{
-	position:absolute;
-	
-	display:inline-block;
-	
-	margin-left:34rem;
-	margin-top:5rem;
-	
-	font-family: 'Baloo Bhai 2', cursive;
-}
-#head{
-	background-color:green;
-	
-}
-</style>
 
 </head>
 <body>
