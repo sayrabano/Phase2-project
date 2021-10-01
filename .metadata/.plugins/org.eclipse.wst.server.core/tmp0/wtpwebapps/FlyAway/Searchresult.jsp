@@ -24,7 +24,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FlyAway</title>
+    <title>Search Result</title>
    
 <%@include file="allcss.jsp" %>
     <link rel="stylesheet" href="CSS/Style3.css" />

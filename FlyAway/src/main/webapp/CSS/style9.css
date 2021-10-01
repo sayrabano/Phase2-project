@@ -1,4 +1,11 @@
 @charset "ISO-8859-1";
+
+body{
+	background:url("../Images/flugshow-4414576_1280.jpg");
+	background-size:cover;
+	padding:0px;
+	margin:0px;
+}
 #navbar{
 background-color:rgba(0,0,0,.2);
 font-family:'Ubuntu', sans-serif;

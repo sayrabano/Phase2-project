@@ -15,7 +15,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Welcome to FlyAway</title>
+<title>Payment Gateway</title>
 
 
 <%@include file="allcss.jsp" %>

@@ -22,7 +22,7 @@ ResultSet resultSet = null;
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>FlyAway</title>
+<title>Admin Dashboard</title>
 <%@include file="allcss.jsp" %>
 <link rel="stylesheet" href="CSS/style7.css" />
 <style>
@@ -48,8 +48,7 @@ ResultSet resultSet = null;
 
 				
 				
-						<li class="nav-item"><a href="#" class="nav-link">
-						<i class="fa fa-fighter-jet"></i> Add Flight</a></li>
+					
 						
 						
 						<li class="nav-item"><a href="Changepassword.jsp" class="nav-link">

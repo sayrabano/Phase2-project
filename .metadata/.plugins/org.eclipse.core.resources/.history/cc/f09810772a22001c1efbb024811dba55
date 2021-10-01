@@ -1,0 +1,116 @@
+@charset "ISO-8859-1";
+
+body{
+	background:url("../Images/image.jpg");
+	background-size:cover;
+	padding:0px;
+	margin:0px;
+	font-family:'Ubuntu', sans-serif;
+}
+
+
+#navbar{
+background-color:rgba(0,0,0,.2) ;
+font-family:'Ubuntu', sans-serif;
+
+}
+
+
+#navbar ul li a{
+	color:white;
+	
+	font-size:20px;
+	font-weight:bold;
+	padding:15px 20px;
+	
+}
+#navbar ul li a:hover{
+	color:black;
+	background-color:white;
+	border-radius:18px;
+	
+	
+}
+
+
+#tag{
+	font-size:25px;
+ color:black;
+ font-weight:bold;
+
+	
+	float:right;
+	padding: 10px 20px;
+	
+}
+#gear{
+	margin:2px;
+	padding:10px;
+	
+	
+	
+}
+#gear a:hover{
+	
+	
+	
+	background-color:white;
+	
+	
+}
+
+.wrapper{
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 30px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  margin-top:40px;
+}
+
+.wrapper .title{
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+
+
+.wrapper .form .input_field{
+  position: relative;
+  margin-bottom: 10px;
+  
+  
+}
+
+.wrapper .form .input_field .input{
+  width: 100%;
+  padding: 12px;
+  padding-left: 30px;
+  border: none;
+  background: #eeeeee;
+ 
+}
+
+
+
+
+
+.wrapper .form .input_field i{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  
+  
+}
+

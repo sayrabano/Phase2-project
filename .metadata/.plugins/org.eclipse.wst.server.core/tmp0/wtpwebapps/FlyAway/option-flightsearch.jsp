@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
 
-<title>Welcome to FlyAway</title>
+<title>Search Flight</title>
 
 
 

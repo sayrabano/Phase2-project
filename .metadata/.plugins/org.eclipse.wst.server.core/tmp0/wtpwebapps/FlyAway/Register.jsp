@@ -14,7 +14,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>FlyAway</title>
+<title>Register</title>
 <%@include file="allcss.jsp" %>
 	<link rel="stylesheet" href="CSS/Style6.css" />
 	<style>

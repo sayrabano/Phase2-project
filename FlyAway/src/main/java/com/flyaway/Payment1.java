@@ -36,7 +36,7 @@ public class Payment1 extends HttpServlet {
 			
 		}
 		else {
-			response.sendRedirect("Thankyou.jsp");
+			response.sendRedirect("Confirmation.jsp");
 		}
 		
 		out.close();

@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 
-<title>Welcome to FlyAway</title>
+<title>Login</title>
 
 <%@include file="allcss.jsp" %>
 <link rel="stylesheet" href="CSS/Style4.css" />

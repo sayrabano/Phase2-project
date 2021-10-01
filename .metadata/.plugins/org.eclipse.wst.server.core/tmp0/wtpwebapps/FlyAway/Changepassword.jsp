@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Fly Away</title>
+<title>Change Password</title>
 <%@include file="allcss.jsp" %>
 <link rel="stylesheet" href="CSS/style9.css" />
 
