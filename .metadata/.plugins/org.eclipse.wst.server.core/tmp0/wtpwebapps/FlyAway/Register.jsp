@@ -63,7 +63,7 @@
       <input type="text" name="address" placeholder="Address" class="input">
      <i class="fa fa-address-card" aria-hidden="true"></i>
     </div><br>
-  <button type="submit" class="btn btn-primary btn-block badge--pill">Sign In</button>
+  <button type="submit" class="btn btn-primary btn-block badge--pill">Register</button>
   
     </form>
   </div>

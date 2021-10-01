@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
-//Servlet foe PassengerRegistration ....
+//Servlet for PassengerRegistration ....
 public class ServletRegister extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -41,7 +41,7 @@ public class ServletRegister extends HttpServlet {
 			String address = request.getParameter("address");
 			
 			
-			
+			System.out.println(first_name+" "+ last_name+" "+mobile_no+" "+address);
 		
 		  //address Conditions...
 		if(first_name.equals("")||last_name.equals("")||email.equals("")||mobile_no.equals("")||address.equals(""))
